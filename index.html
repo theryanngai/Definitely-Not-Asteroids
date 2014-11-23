@@ -1,0 +1,45 @@
+<html>
+<head>
+<<<<<<< HEAD
+  <script type="text/javascript" src="lib/keymaster.js"></script>
+=======
+>>>>>>> cda4e037565d3a9feef05a9519bb7c6b35e82ebe
+  <script type="text/javascript" src="lib/movingObject.js"></script>
+  <script type="text/javascript" src="lib/utils.js"></script>
+  <script type="text/javascript" src="lib/asteroid.js"></script>
+  <script type="text/javascript" src="lib/bullet.js"></script>
+  <script type="text/javascript" src="lib/ship.js"></script>
+  <script type="text/javascript" src="lib/game.js"></script>
+  <script type="text/javascript" src="lib/gameView.js"></script>
+<<<<<<< HEAD
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  Not Asteroids.<br>
+  <canvas id="game-canvas" onload="ctx.drawImage" width="700px" height="700px"></canvas>
+=======
+</head>
+<body>
+  <canvas id="game-canvas" width="700px" height="700px"></canvas>
+>>>>>>> cda4e037565d3a9feef05a9519bb7c6b35e82ebe
+</body>
+</html>
+
+<script>
+	var canvas = document.getElementById("game-canvas");
+	var ctx = canvas.getContext("2d");
+<<<<<<< HEAD
+
+  var img = new Image();
+  img.onload = function () {
+    ctx.drawImage(img, 0, 0);
+  };
+  img.src = 'space.jpg';
+  
+=======
+>>>>>>> cda4e037565d3a9feef05a9519bb7c6b35e82ebe
+	var game = new Asteroids.Game;
+	var gameview = new Asteroids.GameView(game, ctx);
+	gameview.start();
+</script>
